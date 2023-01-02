@@ -1,17 +1,13 @@
-import { samplePageData } from "../data";
-
-function Columns({lastRepositoryPost, lastDiaryPost})
+function Columns()
 {
-    const lastDiaryPost = 'penis';
-
 
     return (
 
-        <div class="grid grid-cols-2 gap-4 mx-4" className="columncontainer">
-            <div class="border-dashed-2 border-2" className="lastRepo">
+        <div className="grid grid-cols-2 gap-4 mx-4">
+            <div className="border-dashed-2 border-2">
                 <h1> Stuff Here </h1>
             </div>
-            <div  class="border-dashed-2 border-2" className="lastDiary">
+            <div className="border-dashed-2 border-2">
                 <h1> Stuff Here </h1>
             </div>
         </div>

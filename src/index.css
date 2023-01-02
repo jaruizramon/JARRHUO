@@ -4,17 +4,17 @@
 
 @font-face {
     font-family: 'xbr';
-    src: url('\\fonts\xbandrough.ttf');
+    src: url('//xbandrough.ttf');
   }
 
 @font-face {
   font-family: 'marola';
-  src: url('\\fonts\marola__.ttf');
+  src: url('//marola__.ttf');
 }
   
 @font-face {
   font-family: 'kuusino';
-  src: url('\\fonts\kuusinollakahdeksan.ttf');
+  src: url('//kuusinollakahdeksan.ttf');
 }
 
 
