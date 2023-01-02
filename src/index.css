@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'xbr';
+    src: url('\\fonts\xbandrough.ttf');
+  }
+
+@font-face {
+  font-family: 'marola';
+  src: url('\\fonts\marola__.ttf');
+}
+  
+@font-face {
+  font-family: 'kuusino';
+  src: url('\\fonts\kuusinollakahdeksan.ttf');
+}
+
+
