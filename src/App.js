@@ -1,15 +1,13 @@
-
-import Columns from './components/Columns';
-import ContainerMenu from './components/ContainerMenu';
+import Background from './components/Background';
 import HomeHeader from './components/HomeHeader';
-import LastPostPreview from './components/LastPostPreview'
+
 
 function App() {
   return (
-    <div>
+    <div className="">
     <HomeHeader></HomeHeader>
-    <ContainerMenu></ContainerMenu>
-    <Columns></Columns>
+    <Background>
+    </Background>
     </div>
   );
 }
