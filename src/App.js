@@ -14,12 +14,12 @@ function App() {
               <Route path="/" element={<Layout/>}>
                 <Route index element={<Columns/>}/>
                 <Route 
-                element={(props) => <PostPage postType={"project"} {...props}/>} 
+                element={<PostPage postType={"project"}/>} 
                 path="project" 
                 />
                 <Route 
                 path="diary" 
-                element={(props) => <PostPage postType={"diary"} {...props}/>}
+                element={<PostPage postType="diary"/>}
                 />
                 <Route path="about-me" element={<AboutMe/>}/>
               </Route>
