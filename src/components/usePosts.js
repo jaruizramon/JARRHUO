@@ -5,11 +5,12 @@ export default function usePosts(requestType, postType ){
     const [posts, setPosts] = useState(null);
 
     useEffect(() => {
-        if (requestType === "getPostByType") {
-          axios.get(`http://localhost:8080/posts/${postType}`).then(response => {
+        if (requestType === "getPostsByType") {
+          axios.get(`http://localhost:8080/posts/${postType}`)
+          .then(response => {
             const posts = response.data;
             console.log(response.data);
-            setPosts(posts);
+            setPosts(posts)
           });
         }
       }, [requestType, postType]);
