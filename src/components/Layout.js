@@ -1,7 +1,5 @@
 import NavBar from "./NavBar";
 import {Outlet} from "react-router-dom";
-import Columns from "./Columns";
-import HomeHeader from "./HomeHeader";
 
 
 function Layout()
@@ -11,7 +9,6 @@ function Layout()
     return (
 
         <>
-            <HomeHeader/>
             <NavBar/>
             <Outlet/>
         </>

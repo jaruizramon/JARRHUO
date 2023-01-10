@@ -8,13 +8,20 @@ import Columns from './components/Columns';
 
 function App() {
   return (
-    <div className="className=h-screen bg-gradient-to-b from-black to-gray-800">
+    <div className="h-screen bg-gradient-to-b from-black to-gray-800">
         <BrowserRouter>
             <Routes>
               <Route path="/" element={<Layout/>}>
                 <Route index element={<Columns/>}/>
+                <Route 
+                element={(props) => <PostPage postType={"project"} {...props}/>} 
+                path="project" 
+                />
+                <Route 
+                path="diary" 
+                element={(props) => <PostPage postType={"diary"} {...props}/>}
+                />
                 <Route path="about-me" element={<AboutMe/>}/>
-                <Route path="posts" element={<PostPage/>}/>
               </Route>
             </Routes>
         </BrowserRouter>
