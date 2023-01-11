@@ -3,11 +3,10 @@ import usePosts from "./usePosts";
 // postTypes = ["diary", "project"]
 
 function LastPostPreview(props) {
-
-  let postType = props.postType;
-  const posts = usePosts("getPostsByType", postType);
-
   
+  const posts = usePosts("getPostsByType", props.postType);
+
+  console.log(posts)
 
   return (
     <div className="rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500 drop-shadow-2xl">

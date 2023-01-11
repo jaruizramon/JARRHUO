@@ -4,19 +4,16 @@ import axios from "axios";
 export default function usePosts(requestType, postType){
     const [posts, setPosts] = useState(null);
 
-    var linkString = `http://localhost:8080/posts/${postType}`;
-
-    console.log(linkString)
-
     useEffect(() => {
         if (requestType === "getPostsByType") {
+          const linkString = `http://localhost:8080/posts/${postType}`
           axios.get(linkString)
           .then(response => {
             const posts = response.data;
-            setPosts(posts)
+            setPosts(posts);
           });
         }
-      }, [requestType, postType]);
+      }, [postType, requestType]);
 
     
       return posts;
