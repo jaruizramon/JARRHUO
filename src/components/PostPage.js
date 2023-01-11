@@ -8,7 +8,7 @@ function PostPage(props){
 
     if (props.postType === "project"){
 
-        headerString = "PROJECT UPDATE NEWSLETTER";
+        headerString = "PROJECTS";
 
     } else if (props.postType === "diary"){
 
@@ -20,8 +20,8 @@ function PostPage(props){
 
     return(
         <div className="flex container mx-auto my-auto rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500 drop-shadow-2xl">
-            <div className="place-content-center">
-                <h1 className="px-8 py-4 font-kuusino text-white text-4xl">{headerString}</h1>
+            <div className="">
+                <h1 className="px-8 py-4 text-6xl font-kuusino text-white text-center">{headerString}</h1>
                 <div>
                    <Post key={props.postType} postType={props.postType}/> 
                 </div>
