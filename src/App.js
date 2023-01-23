@@ -8,7 +8,7 @@ import Columns from './components/Columns';
 
 function App() {
   return (
-    <div className="h-screen bg-gradient-to-b from-black to-gray-800">
+    <div className="h-screen bg-gradient-to-r from-black to-gray-600 max-h-full">
         <BrowserRouter>
             <Routes>
               <Route path="/" element={<Layout/>}>

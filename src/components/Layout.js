@@ -10,7 +10,7 @@ function Layout()
 
         <>
             <NavBar/>
-            <Outlet/>
+            <Outlet className="min-h-full"></Outlet>
         </>
       
     );

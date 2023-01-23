@@ -19,9 +19,9 @@ function PostPage(props){
     console.log(headerString);
 
     return(
-        <div className="flex container mx-auto my-auto rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500 drop-shadow-2xl">
+        <div className="container mx-auto max-h-screen rounded-lg bg-gradient-to-r from-black to-white drop-shadow-2xl overflow-y-scroll">
             <div className="">
-                <h1 className="px-8 py-4 text-6xl font-kuusino text-white text-center">{headerString}</h1>
+                <h1 className="rounded-lg px-8 py-4 text-6xl font-kuusino text-white text-center">{headerString}</h1>
                 <div>
                    <Post key={props.postType} postType={props.postType}/> 
                 </div>
