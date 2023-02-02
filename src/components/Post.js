@@ -3,29 +3,26 @@ import { Fragment } from "react";
 
 function Post(props)
 {
-    // call rest api to get post by type either "diary" or "project"
+    // call REST api to get post by type either "diary" or "project"
     const posts = usePosts("getPostsByType" , props.postType);
 
     console.log(props.postType)
     console.log(posts)
 
-    var tailwindStrHeader = "";
-    var tailwindStrContainer = "";
+    var tailwindPostTypeStyle = "";
 
     if (props.postType === "project"){
-        tailwindStrHeader = "font-xbr px-1 py-1 mx-2 my-2 text-white text-center text-3xl rounded-lg bg-black"
-        tailwindStrContainer = "shadow-2xl px-8 py-2 mx-4 my-8 m-auto container rounded-lg bg-blue-600";
+        tailwindPostTypeStyle = " bg-gradient-to-r from-indigo-500 to-purple-500 drop-shadow-2xl";
     } else if (props.postType === "diary"){
-        tailwindStrHeader = "font-xbr px-1 py-1 mx-2 my-2 text-white text-center text-3xl rounded-lg bg-black"
-        tailwindStrContainer = "shadow-2xl px-8 py-2 mx-4 my-8 m-auto container rounded-lg bg-blue-600";
+        tailwindPostTypeStyle = " bg-gradient-to-r from-indigo-500 to-purple-500 drop-shadow-2xl";
     }
 
     if (posts) {
 
     var listPosts = posts.map(function(post){
         return(
-            <div className={tailwindStrContainer}>
-                <div className={tailwindStrHeader}  >
+            <div className={"shadow-2xl px-2 py-2 w-5/6 mx-auto my-8 container rounded-lg" + tailwindPostTypeStyle}>
+                <div className="font-['Consolas'] px-1 py-1 mx-2 my-2 text-white text-center text-3xl rounded-lg bg-black"  >
                     {post.header}
                 </div>
                 <div className="w-24 text-white text-center px-2 py-2 mx-2 my-2 rounded-lg bg-gradient-to-r from-black to-gray-600">
