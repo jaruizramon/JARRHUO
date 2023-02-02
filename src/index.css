@@ -1,20 +1,20 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
-@import "tailwindcss/utilities"; 
+@import "tailwindcss/utilities";
 
 @font-face {
-    font-family: 'xbr';
-    src: url('../xbandrough.ttf');
-  }
-
-@font-face {
-  font-family: 'marola';
-  src: url('../marola__.ttf');
+  font-family: "xbr";
+  src: url("../xbandrough.ttf");
 }
-  
+
 @font-face {
-  font-family: 'kuusino';
-  src: url('../kuusinollakahdeksan.ttf');
+  font-family: "marola";
+  src: url("../marola__.ttf");
+}
+
+@font-face {
+  font-family: "kuusino";
+  src: url("../kuusinollakahdeksan.ttf");
 }
 
 

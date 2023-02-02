@@ -3,7 +3,7 @@ import { Fragment } from "react";
 
 function Post(props)
 {
-
+    // call rest api to get post by type either "diary" or "project"
     const posts = usePosts("getPostsByType" , props.postType);
 
     console.log(props.postType)
@@ -13,11 +13,11 @@ function Post(props)
     var tailwindStrContainer = "";
 
     if (props.postType === "project"){
-        tailwindStrHeader = "font-xbr px-1 py-1 mx-2 my-2 text-white text-center text-3xl rounded-lg bg-gradient-to-t from-yellow-500 to-purple-500"
-        tailwindStrContainer = "shadow-2xl px-8 py-2 mx-4 my-8 m-auto container rounded-lg bg-gradient-to-b from-red-200 to-gray-600";
+        tailwindStrHeader = "font-xbr px-1 py-1 mx-2 my-2 text-white text-center text-3xl rounded-lg bg-black"
+        tailwindStrContainer = "shadow-2xl px-8 py-2 mx-4 my-8 m-auto container rounded-lg bg-blue-600";
     } else if (props.postType === "diary"){
-        tailwindStrHeader = "font-xbr px-1 py-1 mx-2 my-2 text-white text-center text-3xl rounded-lg bg-gradient-to-t from-blue-500 to-green-500"
-        tailwindStrContainer = "shadow-2xl px-8 py-2 mx-4 my-8 m-auto container rounded-lg bg-gradient-to-r  from-blue-500 to-red-500";
+        tailwindStrHeader = "font-xbr px-1 py-1 mx-2 my-2 text-white text-center text-3xl rounded-lg bg-black"
+        tailwindStrContainer = "shadow-2xl px-8 py-2 mx-4 my-8 m-auto container rounded-lg bg-blue-600";
     }
 
     if (posts) {
@@ -31,7 +31,7 @@ function Post(props)
                 <div className="w-24 text-white text-center px-2 py-2 mx-2 my-2 rounded-lg bg-gradient-to-r from-black to-gray-600">
                     {post.dateOfPost}
                 </div>
-                <div className="px-2 py-2 text-black rounded-lg bg-white">
+                <div className="break-all px-2 py-2 text-black rounded-lg bg-white">
                     {post.documentContent}
                 </div>
             </div>
