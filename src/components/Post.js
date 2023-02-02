@@ -22,10 +22,10 @@ function Post(props)
     var listPosts = posts.map(function(post){
         return(
             <div className={"shadow-2xl px-2 py-2 w-5/6 mx-auto my-8 container rounded-lg" + tailwindPostTypeStyle}>
-                <div className="font-['Consolas'] px-1 py-1 mx-2 my-2 text-white text-center text-3xl rounded-lg bg-black"  >
+                <div className="font-consolas px-1 py-1 mx-2 my-2 text-white text-center text-3xl rounded-lg bg-black"  >
                     {post.header}
                 </div>
-                <div className="w-24 text-white text-center px-2 py-2 mx-2 my-2 rounded-lg bg-gradient-to-r from-black to-gray-600">
+                <div className="w-24 font-consolas text-white text-center px-2 py-2 mx-2 my-2 rounded-lg bg-gradient-to-r from-black to-gray-600">
                     {post.dateOfPost}
                 </div>
                 <div className="break-all px-2 py-2 text-black rounded-lg bg-white">

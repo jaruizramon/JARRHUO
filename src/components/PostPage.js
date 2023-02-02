@@ -15,7 +15,7 @@ function PostPage(props) {
     <main className="box-content container w-5/6 mx-auto px-auto">
       <div className="my-auto rounded-lg bg-black py-2 ">
         <div className="">
-          <h1 className="rounded-lg px-8 text-6xl font-kuusino text-white text-center ">
+          <h1 className="rounded-lg px-8 text-6xl font-consolas text-white text-center ">
             {headerString}
           </h1>
           <div className="container box-content max-h-page overscroll-y-contain overflow-y-scroll">

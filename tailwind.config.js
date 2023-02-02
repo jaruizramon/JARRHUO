@@ -7,10 +7,11 @@ module.exports = {
     fontFamily: {
       xbr: ["xbr"],
       marola:["marola"],
-      kuusino:["kuusino"]
+      kuusino:["kuusino"],
+      consolas:["Consolas"],
     },
     maxHeight: {
-      page: '710px',
+      page: '700px',
     },
     extend: {},
   },
