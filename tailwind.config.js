@@ -9,6 +9,9 @@ module.exports = {
       marola:["marola"],
       kuusino:["kuusino"]
     },
+    maxHeight: {
+      page: '710px',
+    },
     extend: {},
   },
   plugins: [],

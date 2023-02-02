@@ -6,7 +6,7 @@ export default function usePosts(requestType, postType){
 
     useEffect(() => {
         if (requestType === "getPostsByType") {
-          const linkString = `http://localhost:8080/posts/${postType}`
+          const linkString = `http://192.168.86.180:8080/posts/${postType}`
           axios.get(linkString)
           .then(response => {
             const posts = response.data;
