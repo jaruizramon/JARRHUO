@@ -12,6 +12,7 @@ module.exports = {
     },
     maxHeight: {
       page: '700px',
+      header: '85px',
     },
     extend: {},
   },

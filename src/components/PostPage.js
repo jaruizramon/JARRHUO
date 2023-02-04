@@ -12,10 +12,10 @@ function PostPage(props) {
   console.log(headerString);
 
   return (
-    <main className="box-content container w-5/6 mx-auto px-auto">
-      <div className="my-auto rounded-lg bg-black py-2 ">
+    <main className="lg:box-content container w-5/6 mx-auto px-auto">
+      <div className="sm:mb-80 rounded-lg bg-black ">
         <div className="">
-          <h1 className="rounded-lg px-8 text-6xl font-consolas text-white text-center ">
+          <h1 className=" rounded-lg px-8 md:text-2xl lg:text-4xl font-consolas text-white text-center py-4">
             {headerString}
           </h1>
           <div className="container box-content max-h-page overscroll-y-contain overflow-y-scroll">
