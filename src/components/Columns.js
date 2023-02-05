@@ -5,7 +5,7 @@ function Columns()
 
     return (
 
-        <div className="rounded-lg grid grid-cols-2 gap-2 mx-6">
+        <div className="rounded-lg grid grid-cols-2 ">
             <div className="">
                 <LastPostPreview
                     postType="diary"

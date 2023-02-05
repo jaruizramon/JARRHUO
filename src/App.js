@@ -3,6 +3,7 @@ import Layout from './components/Layout';
 import AboutMe from "./components/AboutMe";
 import PostPage from "./components/PostPage";
 import Columns from './components/Columns';
+import ThisPost from "./components/ThisPost";
 
 
 
@@ -22,6 +23,7 @@ function App() {
                 element={<PostPage postType="diary"/>}
                 />
                 <Route path="about-me" element={<AboutMe/>}/>
+                <Route path="/post/:postId" element={<ThisPost postId=""/>} />
               </Route>
             </Routes>
         </BrowserRouter>

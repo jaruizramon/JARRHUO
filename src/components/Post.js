@@ -38,8 +38,8 @@ function Post(props) {
             </div>
             <Link 
             className="w-16 font-kuusino text-white text-center  mx-2 my-2 rounded-lg bg-gradient-to-r  lg:text-lg md:text-xl sm:text-lg from-green-400 to-blue-700"
-            to={`/post/${post.id}`}
-            element={<ThisPost/>}
+            to={ `/post/${post.id}` }
+            element={<ThisPost postId = {post.id} /> }
             >
                 FOCUS!
             </Link>
