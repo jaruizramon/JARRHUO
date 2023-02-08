@@ -19,7 +19,7 @@ export default function usePosts(requestType, postType, idProp){
        else if (requestType === "getPostsById") {
         if (idProp === ""){
           console.log("CANNOT GET POST BY ID: ID IS NULL")
-          return null
+          
         } else{
           const linkString = `http://192.168.86.180:8080/post/${idProp}`
           axios.get(linkString)

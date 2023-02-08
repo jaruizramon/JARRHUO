@@ -9,7 +9,7 @@ import ThisPost from "./components/ThisPost";
 
 function App() {
   return (
-    <div className="h-screen bg-gradient-to-r from-black to-gray-600 max-h-full">
+    <div className="h-screen bg-gradient-to-r from-black to-gray-800 max-h-full">
         <BrowserRouter>
             <Routes>
               <Route path="/" element={<Layout/>}>
@@ -23,7 +23,7 @@ function App() {
                 element={<PostPage postType="diary"/>}
                 />
                 <Route path="about-me" element={<AboutMe/>}/>
-                <Route path="/post/:postId" element={<ThisPost postId=""/>} />
+                <Route path="/post/:postId" element={<ThisPost/>} />
               </Route>
             </Routes>
         </BrowserRouter>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function NavBar() {
 
-  const buttonStyle = "drop-shadow-2xl lg:mx-8 lg:px-6 lg:my-6 md:my-5 sm:h-6 sm:w-24 mx-auto my-auto text-center max-h-header rounded-lg from-black to-gray-600 drop-shadow-2xl bg-gradient-to-b font-xbr menu-item sm:text-sm  leading-5 text-white  hover:text-gray-700"
+  const buttonStyle = "drop-shadow-2xl lg:mx-8 lg:px-6 lg:my-6 md:my-5 sm:h-6 sm:w-24 mx-auto my-auto text-center max-h-header rounded-lg from-black to-gray-600 drop-shadow-2xl bg-gradient-to-b font-xbr menu-item sm:text-sm  leading-5 text-white hover:text-gray-700"
 
   return (
     <nav className="px-8 flex container mx-auto rounded-lg grid-cols-2 max-w-7xl max-h-header">

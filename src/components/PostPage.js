@@ -1,7 +1,7 @@
 import Post from "./Post";
 
 function PostPage(props) {
-  var headerString = "";
+  let headerString = "";
 
   if (props.postType === "project") {
     headerString = "PROJECTS";

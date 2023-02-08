@@ -1,7 +1,6 @@
 import usePosts from "./usePosts";
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
-import ThisPost from "./ThisPost";
 
 function Post(props) {
   // call REST api to get post by type either "diary" or "project"
@@ -36,12 +35,13 @@ function Post(props) {
             <div className="w-32 font-consolas text-white text-center  mx-2 my-2 rounded-lg bg-gradient-to-r  lg:text-lg md:text-xl sm:text-lg from-black to-gray-600">
               {post.dateOfPost}
             </div>
-            <Link 
-            className="w-16 font-kuusino text-white text-center  mx-2 my-2 rounded-lg bg-gradient-to-r  lg:text-lg md:text-xl sm:text-lg from-green-400 to-blue-700"
-            to={ `/post/${post.id}` }
-            element={<ThisPost postId = {post.id} /> }
+            <Link
+              className="w-16 font-kuusino text-white text-center  mx-2 my-2 rounded-lg bg-gradient-to-r  lg:text-lg md:text-xl sm:text-lg from-green-400 to-blue-700"
+              to={`/post/${post.id}`}
+              //element={<ThisPost {...props} />}
+              state={{id:post.id}}
             >
-                FOCUS!
+              FOCUS!
             </Link>
           </div>
 
