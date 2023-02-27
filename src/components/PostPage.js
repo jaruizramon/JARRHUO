@@ -12,8 +12,8 @@ function PostPage(props) {
   console.log(headerString);
 
   return (
-    <main className="lg:box-content container w-5/6 mx-auto px-auto">
-      <div className="sm:mb-80 rounded-lg bg-black ">
+    <main className="lg:box-content container w-page mx-auto px-auto ">
+      <div className="sm:mb-80 rounded-lg bg-gradient-to-b from-gray-600 to-gray-300 ">
         <div className="">
           <h1 className=" rounded-lg px-8 md:text-2xl lg:text-4xl font-consolas text-white text-center py-4">
             {headerString}

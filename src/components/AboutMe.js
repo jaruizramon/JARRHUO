@@ -1,12 +1,9 @@
-function AboutMe(){
+import ImageString from "../bitmaptext/ImageString";
 
-    return(
-        <div>
-            <h1>I'm rendered!</h1>
-        </div>
-        
-    )
-
-};
+function AboutMe() {
+  return (
+    <ImageString text="helloWorld" />
+  );
+}
 
 export default AboutMe;

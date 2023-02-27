@@ -9,7 +9,8 @@ import ThisPost from "./components/ThisPost";
 
 function App() {
   return (
-    <div className="h-screen bg-gradient-to-r from-black to-gray-800 max-h-full">
+    <div className="h-screen bg-repeat bg-gradient-to-t from-gray-500 to-gray-800 max-h-full" >
+
         <BrowserRouter>
             <Routes>
               <Route path="/" element={<Layout/>}>
