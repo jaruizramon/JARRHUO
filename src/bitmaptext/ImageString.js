@@ -1,4 +1,4 @@
-const ImageString = ({ text }) => {
+const ImageString = ({ text, textStyle }) => {
 
   // Convert the string into an array.
   const charArray = text.split("");
@@ -11,11 +11,11 @@ const ImageString = ({ text }) => {
 
     fileArray[i] = (charDict.get(charArray[i])[randomInt]);
     
-
   }
 
     const charElems = fileArray.map((char, index) => (
-        <img key={index} alt={index} src={`./${char}`} />
+        <img key={index} alt={index} src={require(`./${char}`)} style={textStyle} />
+
     ))
 
     return <div>{charElems}</div>
@@ -71,7 +71,22 @@ const charDict = new Map([
     ['Y', ['character138.png', 'character139.png', 'character140.png']],
     ['y', ['character141.png', 'character142.png', 'character143.png']],
     ['Z', ['character144.png', 'character145.png', 'character146.png']],
-    ['z', ['character147.png', 'character148.png', 'character149.png']],
+    ['0', ['character147.png', 'character148.png', 'character149.png']],
+    ['1', ['character147.png', 'character148.png', 'character149.png']],
+    ['2', ['character147.png', 'character148.png', 'character149.png']],
+    ['3', ['character147.png', 'character148.png', 'character149.png']],
+    ['4', ['character147.png', 'character148.png', 'character149.png']],
+    ['5', ['character147.png', 'character148.png', 'character149.png']],
+    ['6', ['character147.png', 'character148.png', 'character149.png']],
+    ['7', ['character147.png', 'character148.png', 'character149.png']],
+    ['8', ['character147.png', 'character148.png', 'character149.png']],
+    ['9', ['character147.png', 'character148.png', 'character149.png']],
+    [' ', ['space.png', 'space.png', 'space.png']],
+    [',', ['comma.png', 'comma.png', 'comma.png']],
+    ['.', ['point.png', 'point.png', 'point.png']],
+    ['?', ['question.png', 'question.png', 'question.png']],
+    ['!', ['exclaim.png', 'exclaim.png', 'exclaim.png']],
+    ['-', ['hyphen.png', 'hyphen.png', 'hyphen.png']],
 
 
 ]);

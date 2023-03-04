@@ -49,16 +49,7 @@ const charDict = new Map([
     ['y', ['character141.png', 'character142.png', 'character143.png']],
     ['Z', ['character144.png', 'character145.png', 'character146.png']],
     ['z', ['character147.png', 'character148.png', 'character149.png']],
-    ['?', ['character150.png', 'character151.png', 'character152.png']],
-    [',', ['character153.png', 'character154.png', 'character155.png']],
-    [',', ['character153.png', 'character154.png', 'character155.png']],
-    [',', ['character153.png', 'character154.png', 'character155.png']],
-    [',', ['character153.png', 'character154.png', 'character155.png']],
-    [',', ['character153.png', 'character154.png', 'character155.png']],
-    [',', ['character153.png', 'character154.png', 'character155.png']],
-    [',', ['character153.png', 'character154.png', 'character155.png']],
-    [',', ['character153.png', 'character154.png', 'character155.png']],
-    [',', ['character153.png', 'character154.png', 'character155.png']]
+
 
 ]);
 
