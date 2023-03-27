@@ -5,6 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// remove global scroll
+ document.body.style.overflow = "hidden";
+
 root.render(
   <React.StrictMode>
     <App />
