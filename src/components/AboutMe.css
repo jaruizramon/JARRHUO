@@ -1,0 +1,17 @@
+.flicker-infinity {
+    animation: flicker-infinity 20ms infinite;
+    background: linear-gradient(to bottom, #000, #000);
+  }
+  
+  @keyframes flicker-infinity {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
